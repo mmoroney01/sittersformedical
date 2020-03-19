@@ -6,3 +6,200 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2345)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-19 11:18:48 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.2ms | Allocations: 294)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1639)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 11:50:14 -0500
+  
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2020-03-19 11:58:26 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 294)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 1639)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for 127.0.0.1 at 2020-03-19 12:17:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 182)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2176)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 12:18:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 12ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1824)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 12:18:45 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 180)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 781)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 12:19:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mmoroney/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 8)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1670)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 12:20:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 73)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mmoroney/Desktop/sittersformedical/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.42.0
+Time: 1797ms
+Built at: 03/19/2020 12:20:23 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3351ms (Views: 3349.6ms | ActiveRecord: 0.0ms | Allocations: 17408)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200319172835)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "is_sitter" boolean NOT NULL, "location" varchar NOT NULL, "sitter_gender" varchar NOT NULL, "sitter_school" varchar NOT NULL, "hcw_children_age_range" varchar NOT NULL, "hcw_possible_hours" varchar NOT NULL, "sitter_willing_to_sit_age_range" varchar NOT NULL, "sitter_age" integer NOT NULL, "sitter_exp" integer NOT NULL, "hcw_number_of_children" integer NOT NULL, "sitter_max_number_of_children" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319172835"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-19 17:49:13.654081"], ["updated_at", "2020-03-19 17:49:13.654081"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("is_sitter", "location", "sitter_gender", "sitter_school", "hcw_children_age_range", "hcw_possible_hours", "sitter_willing_to_sit_age_range", "sitter_age", "sitter_exp", "hcw_number_of_children", "sitter_max_number_of_children", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["is_sitter", 1], ["location", "Arlington Heights"], ["sitter_gender", "female"], ["sitter_school", "Arlington Heights High School"], ["hcw_children_age_range", "n/a"], ["hcw_possible_hours", "n/a"], ["sitter_willing_to_sit_age_range", "4-7"], ["sitter_age", 17], ["sitter_exp", 3], ["hcw_number_of_children", 0], ["sitter_max_number_of_children", 3], ["created_at", "2020-03-19 17:58:18.385684"], ["updated_at", "2020-03-19 17:58:18.385684"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319180307)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319180307"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319180310)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "children_ages" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319180310"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-19 18:19:08.348765"], ["updated_at", "2020-03-19 18:19:08.348765"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "children_ages" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-19 18:23:54.623781"], ["updated_at", "2020-03-19 18:23:54.623781"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "2 3 5"], ["range_possible_hours", "4 7"], ["created_at", "2020-03-19 18:36:03.126909"], ["updated_at", "2020-03-19 18:36:03.126909"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["children_ages", "4"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-19 18:36:03.136672"], ["updated_at", "2020-03-19 18:36:03.136672"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Wheeling"], ["children_ages", "5 5"], ["range_possible_hours", "4 8"], ["created_at", "2020-03-19 18:36:03.146878"], ["updated_at", "2020-03-19 18:36:03.146878"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.7ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["children_ages", "4 5 7"], ["range_possible_hours", "3 7"], ["created_at", "2020-03-19 18:36:03.157846"], ["updated_at", "2020-03-19 18:36:03.157846"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.7ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["children_ages", "6"], ["range_possible_hours", "5 8"], ["created_at", "2020-03-19 18:36:03.175958"], ["updated_at", "2020-03-19 18:36:03.175958"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.7ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "7 8"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-19 18:36:03.200339"], ["updated_at", "2020-03-19 18:36:03.200339"]]
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-19 18:36:03.244230"], ["updated_at", "2020-03-19 18:36:03.244230"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Andersonville"], ["gender", "nonbinary"], ["experience", "4 years"], ["school", "School of the Art Institute of Chicago"], ["age_range_kids_sit", "6 11"], ["age", 20], ["max_number_kids_sit", 3], ["created_at", "2020-03-19 18:36:03.254512"], ["updated_at", "2020-03-19 18:36:03.254512"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.7ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Libertyville"], ["gender", "male"], ["experience", "2 years"], ["school", "College of Lake County"], ["age_range_kids_sit", "8 11"], ["age", 19], ["max_number_kids_sit", 1], ["created_at", "2020-03-19 18:36:03.269614"], ["updated_at", "2020-03-19 18:36:03.269614"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["gender", "female"], ["experience", "10 months"], ["school", "DePaul University"], ["age_range_kids_sit", "6 8"], ["age", 18], ["max_number_kids_sit", 2], ["created_at", "2020-03-19 18:36:03.285636"], ["updated_at", "2020-03-19 18:36:03.285636"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.7ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["gender", "male"], ["experience", "1 year 5 months"], ["school", "Lane Tech High School"], ["age_range_kids_sit", "5 8"], ["age", 15], ["max_number_kids_sit", 2], ["created_at", "2020-03-19 18:36:03.303805"], ["updated_at", "2020-03-19 18:36:03.303805"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.9ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Skokie"], ["gender", "female"], ["experience", "3 months"], ["school", "Niles West High School"], ["age_range_kids_sit", "4 7"], ["age", 16], ["max_number_kids_sit", 1], ["created_at", "2020-03-19 18:36:03.319752"], ["updated_at", "2020-03-19 18:36:03.319752"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m

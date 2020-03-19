@@ -1,0 +1,2 @@
+class Hcw < ApplicationRecord
+end
