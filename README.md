@@ -1,24 +1,13 @@
-# README
+details for hc workers: suburb/neighborhood, # of children with age ranges, possible hours
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+details for sitters: suburb/neighborhood, age, gender, experience, school/college they attend, age groups they are willing to sit, max # of kids they will sit
 
-Things you may want to cover:
+search criteria examples:
 
-* Ruby version
+show me sitters in Arlington Heights
+show me sitters over 18
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+      
