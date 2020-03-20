@@ -1,9 +1,20 @@
 class SittersController < ApplicationController
-	def results
-	  p params[:name]
+	def conversion_searchable(params)
+	  search_hash = Hash.new
 
-	  @sitters = Sitter.search(params[:name])
+	  params.each do |type, value|
+	    search_hash.store(type.to_sym, value) unless value=="" || value=="sitters" || value=="results"
+	  end
+
+	  search_hash
+	end
+
+	def results
+      results = Hash.new
+	  results  = conversion_searchable(params)
+	  @sitters = Sitter.where(results)
 	  p @sitters
-		render 'results'
+
+	  render 'results'
 	end
 end
