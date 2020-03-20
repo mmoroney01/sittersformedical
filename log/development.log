@@ -203,3 +203,1218 @@ Migrating to CreateHcws (20200319182252)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mSitter Create (0.9ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Skokie"], ["gender", "female"], ["experience", "3 months"], ["school", "Niles West High School"], ["age_range_kids_sit", "4 7"], ["age", 16], ["max_number_kids_sit", 1], ["created_at", "2020-03-19 18:36:03.319752"], ["updated_at", "2020-03-19 18:36:03.319752"]]
   [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:12:00 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 18331)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:12:49 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4301)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:17:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4242)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:17:31 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 4291)
+
+
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books?query=fd" for 127.0.0.1 at 2020-03-19 14:17:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:18:40 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4339)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:19:55 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4297)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:20:05 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4289)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:21:05 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4293)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:21:08 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3289)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:25:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 13195)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:25:06 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3359)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:25:25 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4358)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:26:28 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4341)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:26:42 -0500
+Processing by SittersController#results as JS
+No template found for SittersController#results, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:26:44 -0500
+Processing by SittersController#results as JS
+No template found for SittersController#results, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:29:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SittersController#results as JS
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4377)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:29:57 -0500
+Processing by SittersController#results as JS
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3380)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:30:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SittersController#results as JS
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:30:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3987)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:30:48 -0500
+Processing by SittersController#results as JS
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3540)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:31:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3493)
+
+
+Started GET "/sitters" for 127.0.0.1 at 2020-03-19 14:31:12 -0500
+Processing by SittersController#results as JS
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3533)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:31:57 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4357)
+
+
+Started GET "/sitters?query=arlo" for 127.0.0.1 at 2020-03-19 14:31:59 -0500
+Processing by SittersController#results as JS
+  Parameters: {"query"=>"arlo"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 4057)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:32:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 4335)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:33:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4310)
+
+
+Started GET "/sitters?location=arlo&experience=&school=34&willing_range=&gender=" for 127.0.0.1 at 2020-03-19 14:33:07 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"", "school"=>"34", "willing_range"=>"", "gender"=>""}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4087)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non" for 127.0.0.1 at 2020-03-19 14:33:38 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3396)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:35:17 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3484)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non" for 127.0.0.1 at 2020-03-19 14:35:19 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:36:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3472)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non" for 127.0.0.1 at 2020-03-19 14:36:21 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 598)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sitter):
+  
+app/controllers/sitters_controller.rb:3:in `sitter_params'
+app/controllers/sitters_controller.rb:7:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:37:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3474)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non" for 127.0.0.1 at 2020-03-19 14:37:20 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non"}
+[31mUnpermitted parameters: :location, :experience, :school, :willing_range, :gender[0m
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3588)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:39:09 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4320)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non&willing%20number=2" for 127.0.0.1 at 2020-03-19 14:39:10 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non", "willing number"=>"2"}
+[31mUnpermitted parameters: :location, :experience, :school, :willing_range, :gender, :willing number[0m
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4104)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:39:19 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3353)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non&willing%20number=2" for 127.0.0.1 at 2020-03-19 14:39:20 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non", "willing number"=>"2"}
+[31mUnpermitted parameters: :location, :experience, :school, :willing_range, :gender, :willing number[0m
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3416)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-19 14:39:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/sitters?location=arlo&experience=4&school=34&willing_range=4-5&gender=non&willing%20number=2" for 127.0.0.1 at 2020-03-19 14:39:41 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"arlo", "experience"=>"4", "school"=>"34", "willing_range"=>"4-5", "gender"=>"non", "willing number"=>"2"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3553)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:10:00 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 197)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 11667)
+
+
+Started GET "/sitters?location=five&experience=3%20years&school=hug&willing_range=5-6&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:13:49 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"five", "experience"=>"3 years", "school"=>"hug", "willing_range"=>"5-6", "gender"=>"female", "willing number"=>"2"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.4ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4070)
+
+
+Started GET "/sitters?location=five&experience=3%20years&school=hug&willing_range=5-6&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:13:50 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"five", "experience"=>"3 years", "school"=>"hug", "willing_range"=>"5-6", "gender"=>"female", "willing number"=>"2"}
+  Rendering sitters/results.html.erb within layouts/application
+  Rendered sitters/results.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3406)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:18:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/sitters?location=five&experience=3%20years&school=hug&willing_range=5-6&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:18:36 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"five", "experience"=>"3 years", "school"=>"hug", "willing_range"=>"5-6", "gender"=>"female", "willing number"=>"2"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 4490)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f9110140340>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (1.1ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "2 3 5"], ["range_possible_hours", "4 7"], ["created_at", "2020-03-20 13:19:18.757758"], ["updated_at", "2020-03-20 13:19:18.757758"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["children_ages", "4"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-20 13:19:18.767661"], ["updated_at", "2020-03-20 13:19:18.767661"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Wheeling"], ["children_ages", "5 5"], ["range_possible_hours", "4 8"], ["created_at", "2020-03-20 13:19:18.776482"], ["updated_at", "2020-03-20 13:19:18.776482"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["children_ages", "4 5 7"], ["range_possible_hours", "3 7"], ["created_at", "2020-03-20 13:19:18.785379"], ["updated_at", "2020-03-20 13:19:18.785379"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.5ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["children_ages", "6"], ["range_possible_hours", "5 8"], ["created_at", "2020-03-20 13:19:18.796910"], ["updated_at", "2020-03-20 13:19:18.796910"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.5ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "7 8"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-20 13:19:18.815921"], ["updated_at", "2020-03-20 13:19:18.815921"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.6ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:19:18.853379"], ["updated_at", "2020-03-20 13:19:18.853379"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Andersonville"], ["gender", "nonbinary"], ["experience", "4 years"], ["school", "School of the Art Institute of Chicago"], ["age_range_kids_sit", "6 11"], ["age", 20], ["max_number_kids_sit", 3], ["created_at", "2020-03-20 13:19:18.868720"], ["updated_at", "2020-03-20 13:19:18.868720"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.6ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Libertyville"], ["gender", "male"], ["experience", "2 years"], ["school", "College of Lake County"], ["age_range_kids_sit", "8 11"], ["age", 19], ["max_number_kids_sit", 1], ["created_at", "2020-03-20 13:19:18.879052"], ["updated_at", "2020-03-20 13:19:18.879052"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["gender", "female"], ["experience", "10 months"], ["school", "DePaul University"], ["age_range_kids_sit", "6 8"], ["age", 18], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:19:18.893006"], ["updated_at", "2020-03-20 13:19:18.893006"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["gender", "male"], ["experience", "1 year 5 months"], ["school", "Lane Tech High School"], ["age_range_kids_sit", "5 8"], ["age", 15], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:19:18.903873"], ["updated_at", "2020-03-20 13:19:18.903873"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Skokie"], ["gender", "female"], ["experience", "3 months"], ["school", "Niles West High School"], ["age_range_kids_sit", "4 7"], ["age", 16], ["max_number_kids_sit", 1], ["created_at", "2020-03-20 13:19:18.916431"], ["updated_at", "2020-03-20 13:19:18.916431"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:19:32 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3390)
+
+
+Started GET "/sitters?location=five&experience=3%20years&school=hug&willing_range=5-6&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:19:34 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"five", "experience"=>"3 years", "school"=>"hug", "willing_range"=>"5-6", "gender"=>"female", "willing number"=>"2"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3508)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f9110140340>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:22:49 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1423)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2578)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f91103da0d8>::Task):
+    10:     <button type="submit">Search</button>
+    11:  </form>
+    12: 
+    13: <%= form_with model: Task.new do |form| %>
+    14:   <%= form.text_field :guest_name, placeholder: "Who made this mess?", id: "task-name" %><br>
+    15:   <%= form.text_field :description, placeholder: "What is the mess?", id: "task-description" %><br>
+    16:   <%= form.text_field :phone_number, placeholder: "What's this slob's number?", id: "task-phone-number" %>
+  
+app/views/home/index.html.erb:13
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:23:06 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4359)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:24:29 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 217.4ms | Allocations: 124786)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms | Allocations: 125920)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f911043f4b0>:0x00007f911043dc00>
+Did you mean?  for
+               fork):
+    1: <h1>Search for Babysitters!</h1>
+    2: 
+    3: <form action="/sitters" method="get" data-remote="true">
+    4: 	<%= form.text_field :guest_name, placeholder: "Who made this mess?", id: "task-name" %><br>
+    5:     <input type="text" name="location" placeholder="location:"><br>
+    6:     <input type="text" name="experience" placeholder="experience:"><br>
+    7:     <input type="text" name="school" placeholder="school:"><br>
+  
+app/views/home/index.html.erb:4
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:24:39 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4351)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:25:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3482)
+
+
+Started GET "/sitters?location=five&experience=3%20years&school=hug&willing_range=5-6&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:25:06 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"five", "experience"=>"3 years", "school"=>"hug", "willing_range"=>"5-6", "gender"=>"female", "willing number"=>"2"}
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms | Allocations: 2005)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sitter without an ID):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:25:37 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3361)
+
+
+Started GET "/sitters?location=Arlington%20Heights&experience=6%20months&school=Arlington%20Heights%20High%20School&willing_range=3%207&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:26:21 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"6 months", "school"=>"Arlington Heights High School", "willing_range"=>"3 7", "gender"=>"female", "willing number"=>"2"}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 627)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sitter without an ID):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:26:50 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3481)
+
+
+Started GET "/sitters?location=Arlington%20Heights&experience=6%20months&school=Arlington%20Heights%20High%20School&willing_range=3%207&gender=female&willing%20number=2" for 127.0.0.1 at 2020-03-20 08:26:51 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"6 months", "school"=>"Arlington Heights High School", "willing_range"=>"3 7", "gender"=>"female", "willing number"=>"2"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4386)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f911037b2e0>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-20 08:40:17 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4325)
+
+
+Started GET "/sitters?location=Arlington%20Heights&experience=6%20months&school=Arlington%20Heights%20High%20School&willing_range=3%207&gender=female&willing%20number=2&age=17" for 127.0.0.1 at 2020-03-20 08:40:28 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"6 months", "school"=>"Arlington Heights High School", "willing_range"=>"3 7", "gender"=>"female", "willing number"=>"2", "age"=>"17"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4206)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f911068cba0>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "children_ages" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 13:41:40.639687"], ["updated_at", "2020-03-20 13:41:40.639687"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "2 3 5"], ["range_possible_hours", "4 7"], ["created_at", "2020-03-20 13:41:46.001018"], ["updated_at", "2020-03-20 13:41:46.001018"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["children_ages", "4"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-20 13:41:46.009910"], ["updated_at", "2020-03-20 13:41:46.009910"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.7ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Wheeling"], ["children_ages", "5 5"], ["range_possible_hours", "4 8"], ["created_at", "2020-03-20 13:41:46.021641"], ["updated_at", "2020-03-20 13:41:46.021641"]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.6ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["children_ages", "4 5 7"], ["range_possible_hours", "3 7"], ["created_at", "2020-03-20 13:41:46.046635"], ["updated_at", "2020-03-20 13:41:46.046635"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["children_ages", "6"], ["range_possible_hours", "5 8"], ["created_at", "2020-03-20 13:41:46.062000"], ["updated_at", "2020-03-20 13:41:46.062000"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.8ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["location", "Glenview"], ["children_ages", "7 8"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-20 13:41:46.075730"], ["updated_at", "2020-03-20 13:41:46.075730"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:41:46.108283"], ["updated_at", "2020-03-20 13:41:46.108283"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Andersonville"], ["gender", "nonbinary"], ["experience", "4 years"], ["school", "School of the Art Institute of Chicago"], ["age_range_kids_sit", "6 11"], ["age", 20], ["max_number_kids_sit", 3], ["created_at", "2020-03-20 13:41:46.119845"], ["updated_at", "2020-03-20 13:41:46.119845"]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Libertyville"], ["gender", "male"], ["experience", "2 years"], ["school", "College of Lake County"], ["age_range_kids_sit", "8 11"], ["age", 19], ["max_number_kids_sit", 1], ["created_at", "2020-03-20 13:41:46.141319"], ["updated_at", "2020-03-20 13:41:46.141319"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Logan Square"], ["gender", "female"], ["experience", "10 months"], ["school", "DePaul University"], ["age_range_kids_sit", "6 8"], ["age", 18], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:41:46.151002"], ["updated_at", "2020-03-20 13:41:46.151002"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Roscoe Village"], ["gender", "male"], ["experience", "1 year 5 months"], ["school", "Lane Tech High School"], ["age_range_kids_sit", "5 8"], ["age", 15], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 13:41:46.160033"], ["updated_at", "2020-03-20 13:41:46.160033"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Skokie"], ["gender", "female"], ["experience", "3 months"], ["school", "Niles West High School"], ["age_range_kids_sit", "4 7"], ["age", 16], ["max_number_kids_sit", 1], ["created_at", "2020-03-20 13:41:46.171093"], ["updated_at", "2020-03-20 13:41:46.171093"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 13:53:09.982199"], ["updated_at", "2020-03-20 13:53:09.982199"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "children_ages" varchar, "location" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 13:58:18.681204"], ["updated_at", "2020-03-20 13:58:18.681204"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 13:58:24.192552"], ["updated_at", "2020-03-20 13:58:24.192552"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "children_ages" varchar, "range_possible_hours" varchar, "location" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 13:58:51.073089"], ["updated_at", "2020-03-20 13:58:51.073089"]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "children_ages" varchar, "range_possible_hours" varchar, "location" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 13:59:07.892292"], ["updated_at", "2020-03-20 13:59:07.892292"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 13:59:14.019043"], ["updated_at", "2020-03-20 13:59:14.019043"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "2 3 5"], ["created_at", "2020-03-20 13:59:14.036095"], ["updated_at", "2020-03-20 13:59:14.036095"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "children_ages" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 14:00:05.726983"], ["updated_at", "2020-03-20 14:00:05.726983"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 14:00:15.579380"], ["updated_at", "2020-03-20 14:00:15.579380"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "gender" varchar NOT NULL, "experience" varchar NOT NULL, "school" varchar NOT NULL, "age_range_kids_sit" varchar NOT NULL, "age" integer NOT NULL, "max_number_kids_sit" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar NOT NULL, "children_ages" varchar NOT NULL, "range_possible_hours" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 14:03:41.738141"], ["updated_at", "2020-03-20 14:03:41.738141"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 14:03:47.204929"], ["updated_at", "2020-03-20 14:03:47.204929"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar, "gender" varchar, "experience" varchar, "school" varchar, "age_range_kids_sit" varchar, "age" integer, "max_number_kids_sit" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182245"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar, "children_ages" varchar, "range_possible_hours" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319182252"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-20 14:05:29.124083"], ["updated_at", "2020-03-20 14:05:29.124083"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 14:05:34.939628"], ["updated_at", "2020-03-20 14:05:34.939628"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "2 3 5"], ["created_at", "2020-03-20 14:05:34.953136"], ["updated_at", "2020-03-20 14:05:34.953136"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "4 7"], ["created_at", "2020-03-20 14:05:34.965578"], ["updated_at", "2020-03-20 14:05:34.965578"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.5ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Arlington Heights"], ["created_at", "2020-03-20 14:05:34.975301"], ["updated_at", "2020-03-20 14:05:34.975301"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "4"], ["created_at", "2020-03-20 14:05:34.988942"], ["updated_at", "2020-03-20 14:05:34.988942"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "3 5"], ["created_at", "2020-03-20 14:05:35.000085"], ["updated_at", "2020-03-20 14:05:35.000085"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Wheeling"], ["created_at", "2020-03-20 14:05:35.030171"], ["updated_at", "2020-03-20 14:05:35.030171"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "5 5"], ["created_at", "2020-03-20 14:05:35.042224"], ["updated_at", "2020-03-20 14:05:35.042224"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "4 8"], ["created_at", "2020-03-20 14:05:35.052494"], ["updated_at", "2020-03-20 14:05:35.052494"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Roscoe Village"], ["created_at", "2020-03-20 14:05:35.064168"], ["updated_at", "2020-03-20 14:05:35.064168"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "4 5 7"], ["created_at", "2020-03-20 14:05:35.073445"], ["updated_at", "2020-03-20 14:05:35.073445"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "3 7"], ["created_at", "2020-03-20 14:05:35.083305"], ["updated_at", "2020-03-20 14:05:35.083305"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Logan Square"], ["created_at", "2020-03-20 14:05:35.097242"], ["updated_at", "2020-03-20 14:05:35.097242"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.2ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "6"], ["created_at", "2020-03-20 14:05:35.116960"], ["updated_at", "2020-03-20 14:05:35.116960"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "5 8"], ["created_at", "2020-03-20 14:05:35.134386"], ["updated_at", "2020-03-20 14:05:35.134386"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["location", "Glenview"], ["created_at", "2020-03-20 14:05:35.154226"], ["updated_at", "2020-03-20 14:05:35.154226"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.6ms)[0m  [1m[32mINSERT INTO "hcws" ("children_ages", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["children_ages", "7 8"], ["created_at", "2020-03-20 14:05:35.198916"], ["updated_at", "2020-03-20 14:05:35.198916"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("range_possible_hours", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["range_possible_hours", "3 5"], ["created_at", "2020-03-20 14:05:35.247348"], ["updated_at", "2020-03-20 14:05:35.247348"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-20 09:05:51 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 7868)
+
+
+Started GET "/sitters?location=Arlington%20Heights&experience=6%20months&school=Arlington%20Heights%20High%20School&willing_range=3%207&gender=female&willing%20number=2&age=17" for 127.0.0.1 at 2020-03-20 09:05:54 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"6 months", "school"=>"Arlington Heights High School", "willing_range"=>"3 7", "gender"=>"female", "willing number"=>"2", "age"=>"17"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4449)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x0000562d9fb29620>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 14:24:49.210116"], ["updated_at", "2020-03-20 14:24:49.210116"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 month"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 14:26:47.778337"], ["updated_at", "2020-03-20 14:26:47.778337"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 month"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 14:28:09.522173"], ["updated_at", "2020-03-20 14:28:09.522173"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.2ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 month"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 14:31:02.474171"], ["updated_at", "2020-03-20 14:31:02.474171"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 month"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-20 14:31:42.049528"], ["updated_at", "2020-03-20 14:31:42.049528"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-20 09:35:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4375)
+
+
+Started GET "/sitters?location=Arlington%20Heights&experience=6%20months&school=Arlington%20Heights%20High%20School&willing_range=3%207&gender=female&willing%20number=2&age=17" for 127.0.0.1 at 2020-03-20 09:35:27 -0500
+Processing by SittersController#results as JS
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"6 months", "school"=>"Arlington Heights High School", "willing_range"=>"3 7", "gender"=>"female", "willing number"=>"2", "age"=>"17"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4200)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f7d640e47f8>):
+  
+app/controllers/sitters_controller.rb:5:in `results'
+Started GET "/" for 127.0.0.1 at 2020-03-20 09:44:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 15192)
+
+

@@ -13,21 +13,21 @@
 ActiveRecord::Schema.define(version: 2020_03_19_182252) do
 
   create_table "hcws", force: :cascade do |t|
-    t.string "location", null: false
-    t.string "children_ages", null: false
-    t.string "range_possible_hours", null: false
+    t.string "location"
+    t.string "children_ages"
+    t.string "range_possible_hours"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "sitters", force: :cascade do |t|
-    t.string "location", null: false
-    t.string "gender", null: false
-    t.string "experience", null: false
-    t.string "school", null: false
-    t.string "age_range_kids_sit", null: false
-    t.integer "age", null: false
-    t.integer "max_number_kids_sit", null: false
+    t.string "location"
+    t.string "gender"
+    t.string "experience"
+    t.string "school"
+    t.string "age_range_kids_sit"
+    t.integer "age"
+    t.integer "max_number_kids_sit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
