@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_03_19_182252) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "hcws", force: :cascade do |t|
     t.string "location"
     t.string "children_ages"
