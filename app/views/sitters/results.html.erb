@@ -1,4 +1,10 @@
-
-
-
-<h1>DD</h1>
+<h1>Results</h1>
+<% @sitters.each do |sitter| %>
+  <%= sitter.location %><br>
+  <%= sitter.experience %><br>
+  <%= sitter.age_range_kids_sit %><br>
+  <%= sitter.gender %><br>
+  <%= sitter.max_number_kids_sit %><br>
+  <%= sitter.school %><br>
+  <%= sitter.age %><br><br>
+<% end %>

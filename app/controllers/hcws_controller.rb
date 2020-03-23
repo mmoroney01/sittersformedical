@@ -1,9 +1,19 @@
 class HcwsController < ApplicationController
-	def results
-	  p params[:name]
+	def conversion_searchable(params)
+	  search_hash = Hash.new
 
-	  @hcws = Hcw.search(params[:name])
-	  p @hcws
-		render 'results'
+	  params.each do |type, value|
+	    search_hash.store(type.to_sym, value) unless value=="" || value=="hcws" || value=="results"
+	  end
+
+	  search_hash
+	end
+
+	def results
+      results = Hash.new
+	  results  = conversion_searchable(params)
+	  @hcws = Hcw.where(results)
+
+	  render "hcws/results"
 	end
 end
