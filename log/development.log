@@ -3892,3 +3892,106 @@ Processing by SittersController#results as HTML
 Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 4908)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (255.9ms)[0m  [1m[35mCREATE DATABASE "demo_test_development" ENCODING = 'unicode'[0m
+  [1m[35m (261.5ms)[0m  [1m[35mCREATE DATABASE "demo_test_test" ENCODING = 'unicode'[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4644470476541511945)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSitters (20200319182245)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "sitters" ("id" bigserial primary key, "location" character varying, "gender" character varying, "experience" character varying, "school" character varying, "age_range_kids_sit" character varying, "age" integer, "max_number_kids_sit" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200319182245"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateHcws (20200319182252)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "hcws" ("id" bigserial primary key, "location" character varying, "children_ages" character varying, "range_possible_hours" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200319182252"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-23 14:09:35.864273"], ["updated_at", "2020-03-23 14:09:35.864273"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4644470476541511945)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.6ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-23 14:09:41.277709"], ["updated_at", "2020-03-23 14:09:41.277709"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Arlington Heights"], ["gender", "female"], ["experience", "6 months"], ["school", "Arlington Heights High School"], ["age_range_kids_sit", "3 7"], ["age", 17], ["max_number_kids_sit", 2], ["created_at", "2020-03-23 14:09:41.284193"], ["updated_at", "2020-03-23 14:09:41.284193"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Andersonville"], ["gender", "nonbinary"], ["experience", "4 years"], ["school", "School of the Art Institute of Chicago"], ["age_range_kids_sit", "6 11"], ["age", 20], ["max_number_kids_sit", 3], ["created_at", "2020-03-23 14:09:41.296825"], ["updated_at", "2020-03-23 14:09:41.296825"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Libertyville"], ["gender", "male"], ["experience", "2 years"], ["school", "College of Lake County"], ["age_range_kids_sit", "8 11"], ["age", 19], ["max_number_kids_sit", 1], ["created_at", "2020-03-23 14:09:41.302403"], ["updated_at", "2020-03-23 14:09:41.302403"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Logan Square"], ["gender", "female"], ["experience", "10 months"], ["school", "DePaul University"], ["age_range_kids_sit", "6 8"], ["age", 18], ["max_number_kids_sit", 2], ["created_at", "2020-03-23 14:09:41.308048"], ["updated_at", "2020-03-23 14:09:41.308048"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Roscoe Village"], ["gender", "male"], ["experience", "1 year 5 months"], ["school", "Lane Tech High School"], ["age_range_kids_sit", "5 8"], ["age", 15], ["max_number_kids_sit", 2], ["created_at", "2020-03-23 14:09:41.313985"], ["updated_at", "2020-03-23 14:09:41.313985"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSitter Create (0.3ms)[0m  [1m[32mINSERT INTO "sitters" ("location", "gender", "experience", "school", "age_range_kids_sit", "age", "max_number_kids_sit", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["location", "Skokie"], ["gender", "female"], ["experience", "3 months"], ["school", "Niles West High School"], ["age_range_kids_sit", "4 7"], ["age", 16], ["max_number_kids_sit", 1], ["created_at", "2020-03-23 14:09:41.319465"], ["updated_at", "2020-03-23 14:09:41.319465"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.5ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Glenview"], ["children_ages", "2 3 5"], ["range_possible_hours", "4 7"], ["created_at", "2020-03-23 14:09:41.338951"], ["updated_at", "2020-03-23 14:09:41.338951"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Glenview"], ["children_ages", "2 3 5"], ["range_possible_hours", "4 7"], ["created_at", "2020-03-23 14:09:41.350523"], ["updated_at", "2020-03-23 14:09:41.350523"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Arlington Heights"], ["children_ages", "4"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-23 14:09:41.364868"], ["updated_at", "2020-03-23 14:09:41.364868"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Wheeling"], ["children_ages", "5 5"], ["range_possible_hours", "4 8"], ["created_at", "2020-03-23 14:09:41.373025"], ["updated_at", "2020-03-23 14:09:41.373025"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Roscoe Village"], ["children_ages", "4 5 7"], ["range_possible_hours", "3 7"], ["created_at", "2020-03-23 14:09:41.382728"], ["updated_at", "2020-03-23 14:09:41.382728"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.4ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Logan Square"], ["children_ages", "6"], ["range_possible_hours", "5 8"], ["created_at", "2020-03-23 14:09:41.395900"], ["updated_at", "2020-03-23 14:09:41.395900"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHcw Create (0.3ms)[0m  [1m[32mINSERT INTO "hcws" ("location", "children_ages", "range_possible_hours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["location", "Glenview"], ["children_ages", "7 8"], ["range_possible_hours", "3 5"], ["created_at", "2020-03-23 14:09:41.406290"], ["updated_at", "2020-03-23 14:09:41.406290"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-03-23 09:10:08 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 8034)
+
+
+Started GET "/sitters?location=Arlington+Heights&experience=&school=&willing_range=&gender=&willing_number=&age=" for 127.0.0.1 at 2020-03-23 09:10:12 -0500
+Processing by SittersController#results as HTML
+  Parameters: {"location"=>"Arlington Heights", "experience"=>"", "school"=>"", "willing_range"=>"", "gender"=>"", "willing_number"=>"", "age"=>""}
+  Rendering sitters/results.html.erb within layouts/application
+  [1m[36mSitter Load (0.4ms)[0m  [1m[34mSELECT "sitters".* FROM "sitters" WHERE "sitters"."location" = $1[0m  [["location", "Arlington Heights"]]
+  ↳ app/views/sitters/results.html.erb:2
+  Rendered sitters/results.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 4.7ms | Allocations: 11032)
+
+
+Started GET "/sitters?location=&experience=&school=&willing_range=&gender=female&willing_number=&age=" for 127.0.0.1 at 2020-03-23 09:10:19 -0500
+Processing by SittersController#results as HTML
+  Parameters: {"location"=>"", "experience"=>"", "school"=>"", "willing_range"=>"", "gender"=>"female", "willing_number"=>"", "age"=>""}
+  Rendering sitters/results.html.erb within layouts/application
+  [1m[36mSitter Load (0.3ms)[0m  [1m[34mSELECT "sitters".* FROM "sitters" WHERE "sitters"."gender" = $1[0m  [["gender", "female"]]
+  ↳ app/views/sitters/results.html.erb:2
+  Rendered sitters/results.html.erb within layouts/application (Duration: 1.9ms | Allocations: 763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 4274)
+
+
