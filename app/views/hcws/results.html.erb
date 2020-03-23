@@ -1,4 +1,6 @@
 <h1>Results</h1>
-<% @hcws.each do |hcw| %>
-  <%= hcw.location %>
+<% hcws.each do |hcw| %>
+  <%= hcw.location %><br>
+  <%= hcw.children_ages %><br>
+  <%= hcw.range_possible_hours %><br>
 <% end %>
