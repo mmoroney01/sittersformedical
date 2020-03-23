@@ -8,5 +8,6 @@ show me sitters in Arlington Heights
 show me sitters over 18
 
 
-
+To let a user view a page without login, put the following code in the relevant controller.
+skip_before_action :authenticate_user!, :only => [:index]
 
