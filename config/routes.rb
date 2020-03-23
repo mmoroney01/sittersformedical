@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       }
 
 
-  root to: "home#index"
+  get '/' => "home#index"
   get '/sitters' => 'sitters#results'
   get '/hcws' => 'hcws#results'
 end

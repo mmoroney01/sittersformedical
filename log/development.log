@@ -5499,3 +5499,74 @@ Processing by Users::SessionsController#new as HTML
 Completed 200 OK in 36ms (Views: 23.9ms | ActiveRecord: 4.1ms | Allocations: 16434)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-23 12:55:19 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 953)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-23 12:55:19 -0500
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 526)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1858)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7759379205a781f394e2
+Version: webpack 4.42.0
+Time: 646ms
+Built at: 03/23/2020 12:55:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f0696fbb77cf26e9edb2.js   7.29 KiB  application  [emitted] [immutable]  application
+js/application-f0696fbb77cf26e9edb2.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f0696fbb77cf26e9edb2.js js/application-f0696fbb77cf26e9edb2.js.map
+[./app/javascript/packs/application.js] 3.39 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/mmoroney/Desktop/sittersformedical/app/javascript/packs/application.js: Unexpected token, expected ";" (7:29)
+
+   5 | 
+   6 | require("@rails/ujs").start()
+>  7 | require("turbolinks").start()w
+     |                              ^
+   8 | require("@rails/activestorage").start()
+   9 | require("channels")
+  10 | 
+    at Parser._raise (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:723:17)
+    at Parser.raiseWithData (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:716:17)
+    at Parser.raise (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:710:17)
+    at Parser.unexpected (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:8606:16)
+    at Parser.semicolon (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:8588:40)
+    at Parser.parseExpressionStatement (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:11415:10)
+    at Parser.parseStatementContent (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:11016:19)
+    at Parser.parseStatement (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:10882:17)
+    at Parser.parseBlockOrModuleBlockBody (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:11456:25)
+    at Parser.parseBlockBody (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:11443:10)
+    at Parser.parseTopLevel (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:10813:10)
+    at Parser.parse (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:12425:10)
+    at parse (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/parser/lib/index.js:12476:38)
+    at parser (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/core/lib/transformation/normalize-file.js:93:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/mmoroney/Desktop/sittersformedical/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:254:32)
+    at /home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:266:13
+    at async.call.result.err.err (/home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:216:11)
+    at /home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:184:28
+    at /home/mmoroney/Desktop/sittersformedical/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:108:33
+    at step (/home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:280:14)
+    at /home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:266:13
+    at async.call.result.err.err (/home/mmoroney/Desktop/sittersformedical/node_modules/gensync/index.js:216:11)
+
+
+warning ../../package.json: No license field
+
+Completed 200 OK in 2158ms (Views: 2149.1ms | ActiveRecord: 0.0ms | Allocations: 12229)
+
+
