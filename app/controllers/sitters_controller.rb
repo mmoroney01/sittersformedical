@@ -12,6 +12,7 @@ class SittersController < ApplicationController
 	def results
       results = Hash.new
 	  results  = conversion_searchable(params)
+
 	  @sitters = Sitter.where(results)
 
 	  render "sitters/results"
