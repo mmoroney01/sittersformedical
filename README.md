@@ -11,3 +11,12 @@ show me sitters over 18
 To let a user view a page without login, put the following code in the relevant controller.
 skip_before_action :authenticate_user!, :only => [:index]
 
+<% if current_user.nil? %>
+    <%= link_to new_user_session_path, class: 'login-button' do %>Sign in<% end %>
+<% else %>
+    <%= link_to destroy_user_session_path, method: :delete do %>Log out<% end %>
+<% end %>
+
+	devise_for :users, controllers: {
+        sessions: 'users/sessions'
+      }
